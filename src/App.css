@@ -1,0 +1,46 @@
+#propsdrilling div {
+  padding: 2rem 0.3rem;
+  margin-top: 0.5rem;
+  color: white
+}
+
+#one {
+  background: red
+}
+
+#two {
+  background: grey
+}
+
+#three {
+  background: orange
+}
+
+#four {
+  background: blue
+}
+
+#five {
+  background: green
+}
+
+#six {
+  background: violet
+}
+
+span {
+  color: black;
+  font-weight: bolder;
+}
+
+button {
+  background-color:#0a0a23;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  padding:15px;
+  margin-left: 3rem;
+  min-height:30px; 
+  min-width: 120px;
+  cursor: pointer;
+}
