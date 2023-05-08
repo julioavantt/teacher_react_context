@@ -44,3 +44,7 @@ button {
   min-width: 120px;
   cursor: pointer;
 }
+
+h1 {
+  margin-bottom: 3rem;
+}
