@@ -5,10 +5,16 @@ import { PatosContext } from "../../context/PatosContext";
 import { Child } from "./Child";
 
 export const MultipleContext = () => {
-  const [isDarkMode] = useState("patos");
+  const [isDarkMode] = useState(true);
+
+  const obj = {
+    name: "pepe",
+    al: () => alert()
+  }
+
 
   return (
-    <PatosContext.Provider value={"cuac"}>
+    <PatosContext.Provider value={obj}>
       <ThemeContext.Provider value={isDarkMode}>
         <h1>Múltiple Context</h1>
         <Child />

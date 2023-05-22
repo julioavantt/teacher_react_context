@@ -1,3 +1,3 @@
 import { GrandChild } from "./GrandChild";
 
-export const Child = () => <GrandChild />
+export const Child = () => <div><GrandChild /></div>

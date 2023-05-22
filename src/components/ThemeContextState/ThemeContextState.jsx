@@ -4,8 +4,8 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { Child } from "./Child";
 
 export const ThemeContextState = () => {
-  const [isDarkMode] = useState("patos");
-  
+  const [isDarkMode] = useState("patito");
+
   return (
     <ThemeContext.Provider value={isDarkMode}>
       <h1>Context</h1>

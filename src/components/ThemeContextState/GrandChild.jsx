@@ -4,13 +4,15 @@ import { GrandGrandChild } from "./GrandGrandChild";
 
 export const GrandChild = () => {
   const isDarkMode = useContext(ThemeContext);
+
   return (
     <div>
       GrandChild
       <hr />
-      Modo oscuro: {JSON.stringify(isDarkMode)}
+      Modo oscuro: {isDarkMode}
       <hr />
       <GrandGrandChild />
     </div>
   );
 };
+
