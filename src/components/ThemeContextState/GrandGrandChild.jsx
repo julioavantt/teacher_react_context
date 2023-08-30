@@ -1,7 +1,7 @@
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext"
 
 export const GrandGrandChild = () => (
-  <ThemeContext.Consumer>
-    {(isDarkMode) => <p>GrandGrandChild modo oscuro: {JSON.stringify(isDarkMode)}</p>}
-  </ThemeContext.Consumer>
-);
+	<ThemeContext.Consumer>
+		{isDarkMode => <p>GrandGrandChild modo oscuro: {isDarkMode}</p>}
+	</ThemeContext.Consumer>
+)
