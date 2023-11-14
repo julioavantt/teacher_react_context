@@ -1,55 +1,55 @@
 import { useState } from "react"
 
-const ComponentChild6 = ({ state, update }) => (
+const Pink = ({ state, update }) => (
 	<div id="six">
 		Component 6 -<b>Valor del state: {state}</b>
 		<button onClick={() => update(prev => prev + 1)}>update</button>
 	</div>
 )
 
-const ComponentChild5 = ({ state, update }) => (
+const Green = ({ state, update }) => (
 	<div id="five">
-		5 state: {state}
-		<ComponentChild6 state={state} update={update} />
+		{/* 5 state: {state} */}
+		<Pink state={state} update={update} />
 	</div>
 )
 
-const ComponentChild4 = ({ state, update }) => (
+const Blue = ({ state, update }) => (
 	<div id="four">
 		4
-		<ComponentChild5 state={state} update={update} />
+		<Green state={state} update={update} />
 	</div>
 )
 
-const ComponentChild3 = ({ state, update }) => (
+const Orange = ({ state, update }) => (
 	<div id="three">
 		3
-		<ComponentChild4 state={state} update={update} />
+		<Blue state={state} update={update} />
 	</div>
 )
 
-const ComponentChild2 = ({ state, update }) => (
+const Grey = ({ state, update }) => (
 	<div id="two">
 		2
-		<ComponentChild3 state={state} update={update} />
+		<Orange state={state} update={update} />
 	</div>
 )
 
-const ComponentChild1 = ({ state, update }) => (
+const Red = ({ state, update }) => (
 	<div id="one">
 		1
-		<ComponentChild2 state={state} update={update} />
+		<Grey state={state} update={update} />
 	</div>
 )
 
 export const MainComponent = () => {
-	const [state, setState] = useState(1) //! 2
+	const [state, setState] = useState(1)
 
 	return (
 		<div id="propsdrilling">
 			<h1>Prop drilling</h1>
 			<span>Main Component</span>
-			<ComponentChild1 state={state} update={setState} />
+			<Red state={state} update={setState} />
 		</div>
 	)
 }
