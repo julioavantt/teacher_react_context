@@ -5,7 +5,7 @@ import { UpdaterContext } from "./UpdaterContext"
 const AmoLasProps = props => <mark>{JSON.stringify(props.rebelde)}</mark>
 
 export const GrandChild = () => {
-	const { isDarkMode } = useContext(ThemeContext)
+	const { isDarkMode } = useContext(ThemeContext) // ! false
 
 	return (
 		<div>
